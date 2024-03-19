@@ -3,16 +3,18 @@ import style from "./index.module.scss";
 import Button from "../Button";
 
 const Card = (props: any) => {
-  const { icon, cardTitle, cardDescription } = props;
+  const { icon, cardTitle, cardDescription, btnText } = props;
 
   return (
     <div className={style.card}>
-      <h4>
-        {icon && <img src={icon} alt="" />}
-        {cardTitle}
-      </h4>
-      <p>{cardDescription}</p>
-      <Button>Meet up</Button>
+      <div>
+        <h4>
+          {icon && <img src={icon} alt="" />}
+          {cardTitle}
+        </h4>
+        <p>{cardDescription}</p>
+      </div>
+      <Button>{btnText}</Button>
     </div>
   );
 };

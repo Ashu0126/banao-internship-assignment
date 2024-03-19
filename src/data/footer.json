@@ -1,0 +1,82 @@
+{
+  "cards": [
+    {
+      "icon": "/svg/people.svg",
+      "cardTitle": "People",
+      "cardDescription": "Find a teacher, coach, or expert for your hobby interest in your locality.  Find a partner, teammate, accompanist or collaborator.",
+      "btnText": "Connect"
+    },
+    {
+      "icon": "/svg/location.svg",
+      "cardTitle": "Place",
+      "cardDescription": "Find a class, school, playground, auditorium, studio, shop or an event venue.  Book a slot at venues that allow booking through hobbycue.",
+      "btnText": "Meet up"
+    },
+    {
+      "icon": "/svg/product.svg",
+      "cardTitle": "Product",
+      "cardDescription": "Find equipment or supplies required for your hobby.  Buy, rent or borrow from shops, online stores or from community members.",
+      "btnText": "Get it"
+    },
+    {
+      "icon": "/svg/program.svg",
+      "cardTitle": "Program",
+      "cardDescription": "Find events, meetups and workshops related to your hobby.  Register or buy tickets online.",
+      "btnText": "Attend"
+    }
+  ],
+  "addOwn": {
+    "icon": "/svg/add.svg",
+    "cardTitle": "Add your own",
+    "cardDescription": "Are you a teacher or expert?  Do you sell or rent out equipment, venue or event tickets?  Or, you know someone who should be on hobbycue?  Go ahead and Add your Own page",
+    "btnText": "Add new"
+  },
+  "footer": {
+    "links": [
+      {
+        "heading": "Hobbycue",
+        "tabs": [
+          "About Us",
+          "Our Services",
+          "Work with Us",
+          "FAQ",
+          "Contact Us"
+        ]
+      },
+      {
+        "heading": "Hobbycue",
+        "tabs": [
+          "About Us",
+          "Our Services",
+          "Work with Us",
+          "FAQ",
+          "Contact Us",
+          "Other Queries"
+        ]
+      },
+      {
+        "heading": "Hobbycue",
+        "tabs": ["About Us", "Our Services", "Work with Us", "FAQ"]
+      }
+    ],
+    "social": {
+      "heading": "Social Media",
+      "links": [
+        "/svg/facebook.svg",
+        "/svg/facebook.svg",
+        "/svg/facebook.svg",
+        "/svg/facebook.svg",
+        "/svg/facebook.svg",
+        "/svg/facebook.svg",
+        "/svg/facebook.svg",
+        "/svg/facebook.svg"
+      ]
+    },
+    "referral": {
+      "heading": "Invite Friends",
+      "inputPlaceHolder": "Email ID",
+      "btnText": "Invite"
+    }
+  },
+  "copyright": "Purple Cues Private Limited"
+}

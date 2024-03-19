@@ -1,0 +1,49 @@
+@import "./../src/styles/variables.scss";
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4rem;
+  gap: 1rem;
+}
+
+.addOwn {
+  background-color: $background-color;
+  padding: 4rem;
+}
+
+.testimonial {
+  height: 100vh;
+  background-color: $white;
+}
+
+.getStarted {
+  height: 87vh;
+  padding: 3rem;
+  background: url("/svg/hero.svg") no-repeat;
+  background-color: $light-grey;
+  background-size: contain;
+  background-position-y: bottom;
+
+  .blue {
+    color: $secondary-color;
+  }
+
+  .voilet {
+    color: $primary-color;
+  }
+
+  h1 {
+    font-style: italic;
+    font-weight: $font-medium;
+    font-size: 36px;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    width: max-content;
+    background-color: $primary-color;
+    color: $white;
+    font-size: 20px;
+  }
+}

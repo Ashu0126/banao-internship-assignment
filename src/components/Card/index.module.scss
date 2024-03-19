@@ -4,6 +4,10 @@
 .card {
   @include border;
   padding: 2rem;
+  background-color: $white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 
   h4 {
     display: flex;
@@ -16,6 +20,8 @@
 
   p {
     font-size: 18px;
+    font-weight: $font-light;
+    margin: 1.5rem 0;
   }
 
   button {
@@ -24,5 +30,9 @@
     font-size: 14px;
     font-weight: $font-semibold;
     padding: 0.5rem 1.25rem;
+    width: max-content;
+    color: $primary-color;
+    background-color: transparent;
+    border-color: $primary-color;
   }
 }
