@@ -1,0 +1,15 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/mixin.scss";
+
+.input {
+  @include border;
+
+  outline-color: $primary-color;
+  padding: 0.75rem;
+  font-size: 12px;
+  margin-bottom: 1rem;
+
+  &::placeholder {
+    color: $dark-grey;
+  }
+}

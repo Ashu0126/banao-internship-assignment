@@ -4,18 +4,26 @@
 .btn {
   @include border;
   @include flex-center;
+  position: relative;
 
   text-align: center;
   width: 100%;
   font-size: 14px;
   font-weight: $font-semibold;
   padding: 0.5rem 1.25rem;
+  border-color: $primary-color;
+  background-color: $primary-color;
+  color: $white;
 
   img {
     justify-self: flex-start;
+    position: absolute;
+    top: 0.65rem;
+    left: 1.5rem;
   }
 }
 
 .outline {
   background-color: transparent;
+  color: $black;
 }

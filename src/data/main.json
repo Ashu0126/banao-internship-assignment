@@ -1,4 +1,34 @@
 {
+  "heroContent": {
+    "heading": "Explore your <span className={style.blue}>hobby</span> or <span className={style.voilet}> passion</span>",
+    "content": "Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform. Your hobby may be about visual or performing arts, sports, games, gardening, model making, cooking, indoor or outdoor activities…",
+    "subContent": "If you are an expert or a seller, you can Add your Listing and promote yourself, your students, products, services or events. Hop on your hobbyhorse and enjoy the ride."
+  },
+  "form": {
+    "tab": ["Sign In", "Join In"],
+    "connectWith": {
+      "text": "Or connect with",
+      "buttons": [
+        {
+          "icon": "/svg/color-google.svg",
+          "btnText": "Continue with Google"
+        },
+        {
+          "icon": "/svg/color-fb.svg",
+          "btnText": "Continue with Facebook"
+        }
+      ]
+    },
+    "input": ["Email", "Password"],
+    "loginBtn": "Continue",
+    "joinBtn": "Agree and Continue",
+    "rememberText": "Remember me",
+    "forgot": {
+      "forgotText": "Forgot password?",
+      "forgotIcon": "/svg/lock.svg"
+    },
+    "tctext": "By continuing, you agree to our <span>Terms of Service</span> and <span>Privacy Policy</span>."
+  },
   "cards": [
     {
       "icon": "/svg/people.svg",
