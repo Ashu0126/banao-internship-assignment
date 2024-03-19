@@ -1,0 +1,21 @@
+@import "./../../styles/mixin.scss";
+@import "./../../styles/variables.scss";
+
+.btn {
+  @include border;
+  @include flex-center;
+
+  text-align: center;
+  width: 100%;
+  font-size: 14px;
+  font-weight: $font-semibold;
+  padding: 0.5rem 1.25rem;
+
+  img {
+    justify-self: flex-start;
+  }
+}
+
+.outline {
+  background-color: transparent;
+}
