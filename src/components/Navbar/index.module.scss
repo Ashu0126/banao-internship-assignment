@@ -4,6 +4,7 @@
 .navbar {
   @include flex-center;
   justify-content: space-between;
+  align-items: stretch;
   background-color: $white;
   padding: 0.5rem 4rem;
 
@@ -14,6 +15,7 @@
   .searchInput {
     @include flex-center;
     justify-content: stretch;
+    align-items: center;
 
     input {
       margin-bottom: 0;
@@ -21,11 +23,18 @@
       border-bottom-right-radius: 0;
       background-color: $grey;
     }
+
     button {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
-      padding: 0.5rem 1rem;
+      padding: 0.65rem 1rem;
     }
+  }
+
+  .extra,
+  .close,
+  .form {
+    display: none;
   }
 
   .navOpt {
@@ -103,9 +112,79 @@
     }
 
     .searchInput,
-    .navOpt,
     .signInBtn {
       display: none;
+    }
+
+    .extra {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      img {
+        width: 2rem;
+      }
+    }
+
+    .navOpt {
+      position: fixed;
+      background-color: $white;
+      height: 100vh;
+      width: 100%;
+      top: 0;
+      right: -100rem;
+      z-index: 4;
+      transition: 0.3s ease-in-out;
+
+      .navItems {
+        display: none;
+      }
+    }
+
+    .active {
+      right: 0;
+    }
+
+    .close {
+      display: block;
+      position: absolute;
+      top: 0.5rem;
+      right: 2rem;
+      width: 1.3rem;
+    }
+
+    .menu,
+    .close {
+      cursor: pointer;
+    }
+
+    .form {
+      display: block;
+      width: 100%;
+      padding: 2rem;
+
+      img {
+        width: 1.2rem;
+        height: 1.2rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .navbar {
+    img {
+      height: 2rem;
+    }
+
+    .extra {
+      img {
+        width: 1.2rem;
+      }
+    }
+
+    .close {
+      width: 1.2rem;
     }
   }
 }
