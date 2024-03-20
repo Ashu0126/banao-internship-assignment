@@ -17,7 +17,8 @@
   }
 
   .heroBanner {
-    height: 85vh;
+    min-height: 528px;
+    height: 100%;
     padding: 6rem 4rem 0;
     display: flex;
     align-items: stretch;
@@ -201,6 +202,31 @@
   .container {
     h1 {
       font-size: 5vmin;
+    }
+
+    .heroBanner {
+      flex-direction: column;
+      height: max-content;
+      padding: 4rem 2rem;
+
+      .about,
+      .register {
+        width: 100%;
+      }
+
+      .about {
+        background: none;
+
+        p {
+          font-size: 12px;
+        }
+      }
+
+      .register {
+        .tab {
+          justify-content: center;
+        }
+      }
     }
 
     .cards {

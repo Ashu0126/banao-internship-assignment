@@ -94,3 +94,18 @@
     }
   }
 }
+
+@media (max-width: 786px) {
+  .navbar {
+    padding: 0.5rem 2rem;
+    img {
+      height: 3rem;
+    }
+
+    .searchInput,
+    .navOpt,
+    .signInBtn {
+      display: none;
+    }
+  }
+}
