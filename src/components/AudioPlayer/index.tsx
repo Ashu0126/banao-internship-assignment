@@ -56,7 +56,7 @@ function AudioPlayer({ audioSrc, personPhoto }: any) {
     <div className={style.audioPlayer}>
       <div className={style.button} onClick={togglePlayPause}>
         {isPlaying ? (
-          <img src={"/svg/pause.svg"} alt="" />
+          <img src={"/svg/play.svg"} alt="" />
         ) : (
           <img src={"/svg/play.svg"} alt="" />
         )}

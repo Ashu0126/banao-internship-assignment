@@ -3,17 +3,22 @@
 
 .audioPlayer {
   @include flex-center;
-  width: 676px;
+  justify-content: stretch;
+  max-width: 676px;
+  width: 100%;
   background-color: $accent-color;
   gap: 2rem;
   @include border;
-  padding: 0.75rem 2rem;
+  padding: 0.75rem;
 
   .playControls {
     @include flex-center;
+    justify-content: stretch;
+    width: 100%;
 
     .timeline {
-      width: 468px;
+      max-width: 468px;
+      width: 100%;
       height: 2px;
       background-color: $white;
       border-radius: 1px;
@@ -28,15 +33,6 @@
         left: 0;
         display: flex;
         align-items: center;
-
-        // &::after {
-        //   content: " ";
-        //   display: block;
-        //   width: 7px;
-        //   height: 7px;
-        //   border-radius: 4px;
-        //   background-color: $primary-color;
-        // }
       }
     }
 
@@ -68,10 +64,9 @@
   }
 
   .button {
-    width: 2.5rem;
-    height: 2.5rem;
-    @include flex-center;
     background-color: $white;
+    height: max-content;
+    padding: 0.55rem 1rem;
     border-radius: 50%;
   }
 }

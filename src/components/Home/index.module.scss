@@ -5,7 +5,7 @@
   h1 {
     font-style: italic;
     font-weight: $font-medium;
-    font-size: 36px;
+    font-size: 6.25vmin;
     margin-bottom: 1rem;
     .blue {
       color: $secondary-color;
@@ -193,6 +193,35 @@
     }
     img {
       width: 100%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    h1 {
+      font-size: 5vmin;
+    }
+
+    .cards {
+      padding: 4rem 2rem;
+      grid-template-columns: 1fr;
+    }
+
+    .addOwn {
+      padding: 4rem 2rem;
+    }
+
+    .testimonial {
+      padding: 4rem 2rem;
+    }
+
+    .getStarted {
+      padding: 4rem 2rem 1rem;
+
+      button {
+        font-size: 14px;
+      }
     }
   }
 }
