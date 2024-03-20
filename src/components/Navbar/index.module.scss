@@ -104,9 +104,13 @@
   }
 }
 
-@media (max-width: 786px) {
+@media (max-width: 1200px) {
   .navbar {
     padding: 0.5rem 2rem;
+    z-index: 3;
+    top: 0;
+    position: sticky;
+
     img {
       height: 3rem;
     }
@@ -171,7 +175,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .navbar {
     img {
       height: 2rem;

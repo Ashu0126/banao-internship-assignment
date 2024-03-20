@@ -9,8 +9,8 @@ const Button = (props: any) => {
       className={`${style.btn} ${outline && style.outline} ${className}`}
       onClick={onClick}
     >
-      <img src={btnIcon} alt="" />
-      {children}
+      {btnIcon && <img src={btnIcon} alt="" />}
+      <p>{children}</p>
     </button>
   );
 };

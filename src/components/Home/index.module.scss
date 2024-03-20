@@ -6,7 +6,7 @@
   h1 {
     font-style: italic;
     font-weight: $font-medium;
-    font-size: 6.25vmin;
+    font-size: 36px;
     margin-bottom: 1rem;
     .blue {
       color: $secondary-color;
@@ -87,10 +87,10 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 768px) {
   .container {
     h1 {
-      font-size: 5vmin;
+      font-size: 18px;
     }
 
     .heroBanner {
