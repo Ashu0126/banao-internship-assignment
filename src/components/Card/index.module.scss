@@ -35,4 +35,33 @@
     background-color: transparent;
     border-color: $primary-color;
   }
+
+  .person {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .personInfo {
+      @include flex-center;
+      gap: 1.5rem;
+
+      img {
+        width: 5rem;
+        border-radius: 50%;
+      }
+
+      h6 {
+        font-size: 18px;
+        font-weight: $font-semibold;
+        margin-bottom: 0.5rem;
+        color: $primary-color;
+      }
+
+      p {
+        margin: 0;
+        color: $secondary-color;
+        font-size: 14px;
+      }
+    }
+  }
 }

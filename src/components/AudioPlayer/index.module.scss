@@ -1,0 +1,77 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/mixin.scss";
+
+.audioPlayer {
+  @include flex-center;
+  width: 676px;
+  background-color: $accent-color;
+  gap: 2rem;
+  @include border;
+  padding: 0.75rem 2rem;
+
+  .playControls {
+    @include flex-center;
+
+    .timeline {
+      width: 468px;
+      height: 2px;
+      background-color: $white;
+      border-radius: 1px;
+      position: relative;
+      margin: 0 10px;
+
+      .progress {
+        height: 100%;
+        background-color: $primary-color;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+
+        // &::after {
+        //   content: " ";
+        //   display: block;
+        //   width: 7px;
+        //   height: 7px;
+        //   border-radius: 4px;
+        //   background-color: $primary-color;
+        // }
+      }
+    }
+
+    .timer {
+      font-size: 12px;
+      color: $primary-color;
+    }
+  }
+
+  .personPhoto {
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    @include flex-center;
+
+    img {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+    }
+
+    .mic {
+      position: absolute;
+      z-index: 2;
+      bottom: -0.2rem;
+      left: 0.2rem;
+      width: 1rem;
+    }
+  }
+
+  .button {
+    width: 2.5rem;
+    height: 2.5rem;
+    @include flex-center;
+    background-color: $white;
+    border-radius: 50%;
+  }
+}

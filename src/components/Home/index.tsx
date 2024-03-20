@@ -6,6 +6,7 @@ import Button from "@/src/components/Button";
 import Card from "@/src/components/Card";
 import Input from "@/src/components/Input";
 import Navbar from "../Navbar";
+import AudioPlayer from "../AudioPlayer";
 
 const Home = (props: any) => {
   const { pageData } = props;
@@ -127,8 +128,17 @@ const Home = (props: any) => {
           btnText={pageData?.addOwn?.btnText}
         />
       </div>
-      {/* <div className={style.testimonial}></div>
-      <div className={style.getStarted}>
+      <div className={style.testimonial}>
+        <Card
+          icon={pageData?.tesimonials?.icon}
+          cardTitle={pageData?.tesimonials?.cardTitle}
+          cardDescription={pageData?.tesimonials?.cardDescription}
+          audioSrc={pageData?.tesimonials?.audioSrc}
+          person={pageData?.tesimonials?.person}
+          className={style.color}
+        />
+      </div>
+      {/* <div className={style.getStarted}>
         <h1>
           Your <span className={style.blue}>Hobby</span>, Your
           <span className={style.volient}> Community...</span>

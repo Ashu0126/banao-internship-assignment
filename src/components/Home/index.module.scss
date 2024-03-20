@@ -171,8 +171,12 @@
   }
 
   .testimonial {
-    height: 100vh;
     background-color: $white;
+    padding: 4rem;
+
+    .color {
+      background-color: $background-color;
+    }
   }
 
   .getStarted {
