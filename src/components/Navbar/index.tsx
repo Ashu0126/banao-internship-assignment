@@ -1,12 +1,12 @@
+"use client";
 import React, { useState } from "react";
 import style from "./index.module.scss";
 import Button from "../Button";
 import Input from "../Input";
 import LoginForm from "../LoginForm";
-import pageData from "./../../data/main.json";
 
 const Navbar = (props: any) => {
-  const { navData } = props;
+  const { navData, formData } = props;
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
@@ -15,20 +15,22 @@ const Navbar = (props: any) => {
 
   return (
     <nav className={style.navbar}>
-      <img src={navData?.logo} alt="" />
+      <a href={navData?.logo?.link}>
+        <img src={navData?.logo?.icon} alt="" />
+      </a>
       <div className={style.searchInput}>
         <Input placeholder={navData?.searchBar?.placeholder} />
-        <Button>S</Button>
+        <Button btnIcon={"/svg/search.svg"}></Button>
       </div>
       <div className={`${style.navOpt} ${open && style.active}`}>
         <img
           className={style.close}
           onClick={handleClick}
-          src={"/svg/close.svg"}
+          src={navData?.closeIcon}
           alt=""
         />
         <div className={style.form}>
-          <LoginForm pageData={pageData} />
+          <LoginForm formData={formData} />
         </div>
         <ul className={style.navItems}>
           {navData?.navTab?.map((tab: any, index: number) => (
@@ -53,12 +55,12 @@ const Navbar = (props: any) => {
         </Button>
       </div>
       <div className={style.extra}>
-        <img src="/svg/search.svg" alt="" />
-        <img src="/svg/bell.svg" alt="" />
+        <img src={navData?.searchIcon} alt="" />
+        <img src={navData?.navTab?.[3]?.icon} alt="" />
         <img
           className={style.menu}
           onClick={handleClick}
-          src="/svg/menu.svg"
+          src={navData?.menuIcon}
           alt=""
         />
       </div>

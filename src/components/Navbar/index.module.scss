@@ -14,8 +14,6 @@
 
   .searchInput {
     @include flex-center;
-    justify-content: stretch;
-    align-items: center;
 
     input {
       margin-bottom: 0;
@@ -27,7 +25,13 @@
     button {
       border-top-left-radius: 0;
       border-bottom-left-radius: 0;
-      padding: 0.65rem 1rem;
+      padding: 0.8rem;
+
+      img {
+        filter: brightness(150%);
+        width: 1rem;
+        height: max-content;
+      }
     }
   }
 

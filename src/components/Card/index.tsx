@@ -12,6 +12,7 @@ const Card = (props: any) => {
     audioSrc,
     person,
     className,
+    href,
   } = props;
 
   return (
@@ -23,7 +24,11 @@ const Card = (props: any) => {
         </h4>
         <p>{cardDescription}</p>
       </div>
-      {btnText && <Button>{btnText}</Button>}
+      {btnText && (
+        <Button outline={true} href={href}>
+          {btnText}
+        </Button>
+      )}
       {person && (
         <div className={style.person}>
           <AudioPlayer audioSrc={audioSrc} personPhoto={person?.photo} />

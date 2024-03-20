@@ -1,4 +1,3 @@
-"use client";
 import { Fragment } from "react";
 import Footer from "@/src/components/Footer";
 import style from "./index.module.scss";
@@ -12,7 +11,7 @@ const Home = (props: any) => {
 
   return (
     <div className={style.container}>
-      <Navbar navData={pageData?.navbar} />
+      <Navbar navData={pageData?.navbar} formData={pageData?.form} />
       <div className={style.heroBanner}>
         <div className={style.about}>
           <h1
@@ -22,7 +21,7 @@ const Home = (props: any) => {
           <p>{pageData?.heroContent?.subContent}</p>
         </div>
         <div className={style.form}>
-          <LoginForm pageData={pageData} />
+          <LoginForm formData={pageData?.form} />
         </div>
       </div>
       <div className={style.cards}>
@@ -50,6 +49,7 @@ const Home = (props: any) => {
           cardTitle={pageData?.addOwn?.cardTitle}
           cardDescription={pageData?.addOwn?.cardDescription}
           btnText={pageData?.addOwn?.btnText}
+          href={pageData?.addOwn?.btnLink}
         />
       </div>
       <div className={style.testimonial}>

@@ -58,6 +58,13 @@
   .addOwn {
     background-color: $background-color;
     padding: 4rem;
+
+    a {
+      width: max-content;
+      p {
+        margin: 0;
+      }
+    }
   }
 
   .testimonial {
@@ -119,6 +126,10 @@
 
     .addOwn {
       padding: 4rem 2rem;
+
+      a {
+        width: 90%;
+      }
     }
 
     .testimonial {

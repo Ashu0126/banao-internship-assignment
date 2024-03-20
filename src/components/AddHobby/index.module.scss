@@ -1,0 +1,100 @@
+@import "@/src/styles/mixin.scss";
+@import "@/src/styles/variables.scss";
+
+.addSection {
+  background-color: $background-color;
+  @include flex-center;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+
+  .cardSection {
+    background-color: $white;
+    align-self: center;
+    padding: 3rem;
+    margin: 2rem;
+    @include border;
+    max-width: 840px;
+
+    h4 {
+      @include flex-center;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 24px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+
+    .people,
+    .product,
+    .program,
+    .place {
+      p {
+        margin: 0.5rem;
+      }
+
+      h4 {
+        justify-content: flex-start;
+      }
+
+      border-width: 2px;
+      &:hover {
+        img {
+          filter: brightness(150%);
+        }
+
+        color: $white;
+      }
+    }
+
+    .people {
+      border-color: $primary-color;
+
+      &:hover {
+        background-color: $primary-color;
+      }
+    }
+
+    .product {
+      border-color: $product;
+
+      &:hover {
+        background-color: $product;
+      }
+    }
+
+    .place {
+      border-color: $location;
+
+      &:hover {
+        background-color: $location;
+      }
+    }
+
+    .program {
+      border-color: $secondary-color;
+
+      &:hover {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .addSection {
+    .cardSection {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+    }
+  }
+}

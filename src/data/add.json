@@ -1,0 +1,93 @@
+{
+  "form": {
+    "tab": ["Sign In", "Join In"],
+    "connectWith": {
+      "text": "Or connect with",
+      "buttons": [
+        {
+          "icon": "/svg/color-google.svg",
+          "btnText": "Continue with Google"
+        },
+        {
+          "icon": "/svg/color-fb.svg",
+          "btnText": "Continue with Facebook"
+        }
+      ]
+    },
+    "input": ["Email", "Password"],
+    "loginBtn": "Continue",
+    "joinBtn": "Agree and Continue",
+    "rememberText": "Remember me",
+    "forgot": {
+      "forgotText": "Forgot password?",
+      "forgotIcon": "/svg/lock.svg"
+    },
+    "tctext": "By continuing, you agree to our <span>Terms of Service</span> and <span>Privacy Policy</span>."
+  },
+  "navbar": {
+    "logo": { "icon": "/img/logo.png", "link": "/" },
+    "searchBar": {
+      "placeholder": "Search here...",
+      "btnImg": "/svg/search.svg"
+    },
+    "navTab": [
+      {
+        "icon": "/svg/compass.svg",
+        "text": "Explore",
+        "dropDownIcon": "/svg/dropDown.svg",
+        "subMenu": [
+          "People - Community",
+          "Places - Venues",
+          "Programs - Events",
+          "Products - Store",
+          "Blogs"
+        ]
+      },
+      {
+        "icon": "/svg/hobbies.svg",
+        "text": "Hobbies",
+        "dropDownIcon": "/svg/dropDown.svg",
+        "subMenu": [
+          "People - Community",
+          "Places - Venues",
+          "Programs - Events",
+          "Products - Store",
+          "Blogs"
+        ]
+      },
+      { "icon": "/svg/bookmark.svg", "text": "" },
+      { "icon": "/svg/bell.svg", "text": "" },
+      { "icon": "/svg/cart.svg", "text": "" }
+    ],
+    "menuIcon": "/svg/menu.svg",
+    "closeIcon": "/svg/close.svg",
+    "searchIcon": "/svg/search.svg",
+    "signIn": "Sign In"
+  },
+  "addOwn": {
+    "icon": "/svg/add.svg",
+    "cardTitle": "Add Your Listing"
+  },
+  "cards": [
+    {
+      "icon": "/svg/people.svg",
+      "cardTitle": "People",
+      "cardDescription": "An Individual or Organization.  Teacher, Coach, Professional or Online Seller.  Company, Business or Association."
+    },
+    {
+      "icon": "/svg/location.svg",
+      "cardTitle": "Place",
+      "cardDescription": "An Address.  Classroom, Shop, Performance or Event Venue, Sports Arena, Play Area, Studio, School or Campus."
+    },
+    {
+      "icon": "/svg/product.svg",
+      "cardTitle": "Product",
+      "cardDescription": "An Item that you can Book, Buy or Rent.  Appointment, Ticket, or Voucher.  Equipment, Instrument or Activity Kit."
+    },
+    {
+      "icon": "/svg/program.svg",
+      "cardTitle": "Program",
+      "cardDescription": "An Event with Venue and Date.  Meetup, Workshop or Webinar.  Exhibition, Performance or Competition."
+    }
+  ]
+}

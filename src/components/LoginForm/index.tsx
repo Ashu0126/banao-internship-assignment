@@ -5,13 +5,13 @@ import style from "./index.module.scss";
 import Input from "../Input";
 
 const LoginForm = (props: any) => {
-  const { pageData } = props;
-  const [selectedTab, setSelectedTab] = useState(pageData?.form?.tab?.[0]);
+  const { formData } = props;
+  const [selectedTab, setSelectedTab] = useState(formData?.tab?.[0]);
 
   return (
     <div className={style.register}>
       <div className={style.tab}>
-        {pageData?.form?.tab?.map((tab: string) => (
+        {formData?.tab?.map((tab: string) => (
           <h5
             className={selectedTab === tab ? style.active : ""}
             key={tab}
@@ -22,7 +22,7 @@ const LoginForm = (props: any) => {
         ))}
       </div>
       <div className={style.btnContainer}>
-        {pageData?.form?.connectWith?.buttons?.map(
+        {formData?.connectWith?.buttons?.map(
           (button: { btnText: string; icon: string }) => (
             <Fragment key={button?.btnText}>
               <Button outline={true} btnIcon={button?.icon}>
@@ -32,10 +32,10 @@ const LoginForm = (props: any) => {
           )
         )}
       </div>
-      <h6>{pageData?.form?.connectWith?.text}</h6>
+      <h6>{formData?.connectWith?.text}</h6>
       <form>
         <div className={style.inputContainer}>
-          {pageData?.form?.input?.map((item: string) => (
+          {formData?.input?.map((item: string) => (
             <Fragment key={item}>
               <Input placeholder={item} />
             </Fragment>
@@ -43,18 +43,18 @@ const LoginForm = (props: any) => {
         </div>
         <div
           className={`${style.formOpt} ${
-            selectedTab !== pageData?.form?.tab?.[0] && style.tc
+            selectedTab !== formData?.tab?.[0] && style.tc
           }`}
         >
-          {selectedTab === pageData?.form?.tab?.[0] ? (
+          {selectedTab === formData?.tab?.[0] ? (
             <>
               <div className={style.remember}>
                 <input type="checkbox" />
-                {pageData?.form?.rememberText}
+                {formData?.rememberText}
               </div>
               <div className={style.forget}>
-                <img src={pageData?.form?.forgot?.forgotIcon} alt="" />
-                {pageData?.form?.forgot?.forgotText}
+                <img src={formData?.forgot?.forgotIcon} alt="" />
+                {formData?.forgot?.forgotText}
               </div>
             </>
           ) : (
@@ -67,19 +67,17 @@ const LoginForm = (props: any) => {
                 </div>
                 <p>Password strength</p>
               </div>
-              <p dangerouslySetInnerHTML={{ __html: pageData?.form?.tctext }} />
+              <p dangerouslySetInnerHTML={{ __html: formData?.tctext }} />
             </>
           )}
         </div>
         <Button
-          className={
-            selectedTab === pageData?.form?.tab?.[0] && style.blackOutline
-          }
-          outline={selectedTab === pageData?.form?.tab?.[0]}
+          className={selectedTab === formData?.tab?.[0] && style.blackOutline}
+          outline={selectedTab === formData?.tab?.[0]}
         >
-          {selectedTab === pageData?.form?.tab?.[0]
-            ? pageData?.form?.loginBtn
-            : pageData?.form?.joinBtn}
+          {selectedTab === formData?.tab?.[0]
+            ? formData?.loginBtn
+            : formData?.joinBtn}
         </Button>
       </form>
     </div>
