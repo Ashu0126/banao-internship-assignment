@@ -1,6 +1,44 @@
 {
+  "navbar": {
+    "logo": "/img/logo.png",
+    "searchBar": {
+      "placeholder": "Search here...",
+      "btnImg": "/svg/search.svg"
+    },
+    "navTab": [
+      {
+        "icon": "/svg/compass.svg",
+        "text": "Explore",
+        "dropDownIcon": "/svg/dropDown.svg",
+        "subMenu": [
+          "People - Community",
+          "Places - Venues",
+          "Programs - Events",
+          "Products - Store",
+          "Blogs"
+        ]
+      },
+      {
+        "icon": "/svg/hobbies.svg",
+        "text": "Hobbies",
+        "dropDownIcon": "/svg/dropDown.svg",
+        "subMenu": [
+          "People - Community",
+          "Places - Venues",
+          "Programs - Events",
+          "Products - Store",
+          "Blogs"
+        ]
+      },
+      { "icon": "/svg/bookmark.svg", "text": "" },
+      { "icon": "/svg/bell.svg", "text": "" },
+      { "icon": "/svg/cart.svg", "text": "" }
+    ],
+
+    "signIn": "Sign In"
+  },
   "heroContent": {
-    "heading": "Explore your <span className={style.blue}>hobby</span> or <span className={style.voilet}> passion</span>",
+    "heading": "Explore your <span style='color: #0096c8'>hobby</span> or <span style='color: #8064a2'> passion</span>",
     "content": "Sign-in to interact with a community of fellow hobbyists and an eco-system of experts, teachers, suppliers, classes, workshops, and places to practice, participate or perform. Your hobby may be about visual or performing arts, sports, games, gardening, model making, cooking, indoor or outdoor activities…",
     "subContent": "If you are an expert or a seller, you can Add your Listing and promote yourself, your students, products, services or events. Hop on your hobbyhorse and enjoy the ride."
   },

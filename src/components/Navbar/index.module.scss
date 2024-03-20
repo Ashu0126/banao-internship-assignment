@@ -1,0 +1,94 @@
+@import "./../../styles/variables.scss";
+@import "./../../styles/mixin.scss";
+
+.navbar {
+  @include flex-center;
+  justify-content: space-between;
+  background-color: $white;
+  padding: 0.5rem 4rem;
+
+  img {
+    height: 60px;
+  }
+
+  .searchInput {
+    display: flex;
+    input {
+      margin-bottom: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      background-color: $grey;
+    }
+    button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .navOpt {
+    @include flex-center;
+    justify-content: flex-end;
+    gap: 1.5rem;
+
+    .navItems {
+      @include flex-center;
+      gap: 1.5rem;
+
+      li {
+        cursor: pointer;
+        @include flex-center;
+        gap: 0.5rem;
+        position: relative;
+
+        img {
+          width: 1.75rem;
+          height: 1.75rem;
+        }
+
+        h5 {
+          font-size: 14px;
+          font-weight: $font-medium;
+        }
+
+        .drop {
+          width: 0.9rem;
+          height: 0.9rem;
+        }
+
+        .navList {
+          display: none;
+          position: absolute;
+          padding-top: 1.25rem;
+          top: 1.75rem;
+          left: 0;
+          color: $darker-grey;
+          width: 15rem;
+          z-index: 2;
+
+          li {
+            padding: 0.75rem;
+            background-color: $white;
+            margin-bottom: 1px;
+            transition: 0.2s;
+            justify-content: flex-start;
+
+            &:hover {
+              padding-left: 1.25rem;
+            }
+          }
+        }
+
+        &:hover > .navList {
+          display: block;
+        }
+      }
+    }
+
+    .signInBtn {
+      color: $primary-color;
+      width: max-content;
+      padding: 0.5rem 1.75rem;
+    }
+  }
+}
