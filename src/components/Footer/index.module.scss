@@ -4,23 +4,30 @@
 .footerContainer {
   .footer {
     @include flex-center;
-
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: stretch;
-    padding: 3rem;
+    padding: 4rem;
     color: $black;
     flex-wrap: wrap;
+    gap: 2rem;
 
     h4 {
       font-size: 14px;
       font-weight: $font-bold;
+      margin-bottom: 0.75rem;
+    }
+
+    .footerTabs {
+      li {
+        margin-bottom: 0.25rem;
+      }
     }
 
     .contact {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      align-items: flex-start;
+      align-items: stretch;
 
       ul {
         @include flex-center;
@@ -28,12 +35,30 @@
 
         li {
           img {
-            padding: 0.5rem;
+            padding: 0.25rem;
             border-radius: 50%;
             background-color: $light-grey;
           }
         }
       }
+    }
+  }
+
+  .searchInput {
+    display: flex;
+    input {
+      margin-bottom: 0;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      background-color: $grey;
+      border-color: $primary-color;
+      width: 100%;
+    }
+    button {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      padding: 0.5rem 1rem;
+      width: max-content;
     }
   }
 

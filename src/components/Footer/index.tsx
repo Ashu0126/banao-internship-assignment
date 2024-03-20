@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import style from "./index.module.scss";
+import Input from "../Input";
+import Button from "../Button";
 
 const Footer = (props: any) => {
   const { footerData } = props;
@@ -11,7 +13,7 @@ const Footer = (props: any) => {
           (item: { heading: string; tabs: string[] }) => (
             <div key={item?.heading}>
               <h4>{item?.heading}</h4>
-              <ul>
+              <ul className={style.footerTabs}>
                 {item?.tabs?.map((tab: string) => (
                   <li key={tab}>{tab}</li>
                 ))}
@@ -34,6 +36,12 @@ const Footer = (props: any) => {
           </div>
           <div className={style.referral}>
             <h4>{footerData?.footer?.referral?.heading}</h4>
+            <div className={style.searchInput}>
+              <Input
+                placeholder={footerData?.footer?.referral?.inputPlaceHolder}
+              />
+              <Button>{footerData?.footer?.referral?.btnText}</Button>
+            </div>
           </div>
         </div>
       </div>

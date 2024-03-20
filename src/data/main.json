@@ -123,32 +123,32 @@
         ]
       },
       {
-        "heading": "Hobbycue",
+        "heading": "How Do I",
         "tabs": [
-          "About Us",
-          "Our Services",
-          "Work with Us",
-          "FAQ",
-          "Contact Us",
+          "Sign Up",
+          "Add a Listing",
+          "Claim Listing",
+          "Post a Query",
+          "Add a Blog Post",
           "Other Queries"
         ]
       },
       {
-        "heading": "Hobbycue",
-        "tabs": ["About Us", "Our Services", "Work with Us", "FAQ"]
+        "heading": "Quick Links",
+        "tabs": ["Listings", "Blog Posts", "Shop / Store", "Community"]
       }
     ],
     "social": {
       "heading": "Social Media",
       "links": [
         "/svg/facebook.svg",
-        "/svg/facebook.svg",
-        "/svg/facebook.svg",
-        "/svg/facebook.svg",
-        "/svg/facebook.svg",
-        "/svg/facebook.svg",
-        "/svg/facebook.svg",
-        "/svg/facebook.svg"
+        "/svg/twitter.svg",
+        "/svg/instagram.svg",
+        "/svg/pinterest.svg",
+        "/svg/google.svg",
+        "/svg/youtube.svg",
+        "/svg/telegram.svg",
+        "/svg/email.svg"
       ]
     },
     "referral": {

@@ -138,13 +138,14 @@ const Home = (props: any) => {
           className={style.color}
         />
       </div>
-      {/* <div className={style.getStarted}>
+      <div className={style.getStarted}>
         <h1>
           Your <span className={style.blue}>Hobby</span>, Your
-          <span className={style.volient}> Community...</span>
+          <span className={style.voilet}> Community...</span>
         </h1>
         <Button>Get Started</Button>
-      </div> */}
+        <img src="/svg/hobby.svg" alt="" />
+      </div>
       <Footer footerData={pageData} />
     </div>
   );

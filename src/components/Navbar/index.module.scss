@@ -12,7 +12,9 @@
   }
 
   .searchInput {
-    display: flex;
+    @include flex-center;
+    justify-content: stretch;
+
     input {
       margin-bottom: 0;
       border-top-right-radius: 0;
