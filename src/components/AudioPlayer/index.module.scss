@@ -70,3 +70,12 @@
     border-radius: 50%;
   }
 }
+
+@media (max-width: 550px) {
+  .audioPlayer {
+    gap: 1rem;
+    .button {
+      padding: 0.3rem 0.7rem;
+    }
+  }
+}

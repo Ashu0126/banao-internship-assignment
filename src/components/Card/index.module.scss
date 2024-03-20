@@ -78,15 +78,18 @@
 
 @media (max-width: 550px) {
   .card {
-    justify-content: center;
     text-align: center;
+    padding: 1.5rem;
 
     h4 {
       font-size: 18px;
+      justify-content: center;
+      gap: 0.5rem;
     }
 
     p {
       font-size: 12px;
+      margin: 0.75rem 0;
     }
 
     button {
@@ -94,12 +97,20 @@
     }
 
     .person {
-      h6 {
-        font-size: 16px;
-      }
+      gap: 1rem;
+      .personInfo {
+        gap: 1rem;
+        h6 {
+          font-size: 14px;
+        }
 
-      p {
-        font-size: 12px;
+        p {
+          font-size: 10px;
+        }
+
+        img {
+          width: 3rem;
+        }
       }
     }
   }
