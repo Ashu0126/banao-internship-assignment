@@ -1,14 +1,21 @@
-"use client";
 import style from "./index.module.scss";
 import React, { useState, useEffect } from "react";
 
 function AudioPlayer({ audioSrc, personPhoto }: any) {
-  const [audio] = useState(new Audio(audioSrc));
+  const [audio, setAudio] = useState<any>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [currentTime, setCurrentTime] = useState(0);
   const [duration, setDuration] = useState(0);
 
   useEffect(() => {
+    if (typeof window !== "undefined") {
+      setAudio(new Audio(audioSrc));
+    }
+  }, [audioSrc]);
+
+  useEffect(() => {
+    if (!audio) return;
+
     const handleTimeUpdate = () => {
       setCurrentTime(audio.currentTime);
     };
@@ -27,6 +34,8 @@ function AudioPlayer({ audioSrc, personPhoto }: any) {
   }, [audio]);
 
   const togglePlayPause = () => {
+    if (!audio) return;
+
     if (isPlaying) {
       audio.pause();
     } else {
@@ -47,7 +56,7 @@ function AudioPlayer({ audioSrc, personPhoto }: any) {
     <div className={style.audioPlayer}>
       <div className={style.button} onClick={togglePlayPause}>
         {isPlaying ? (
-          <img src={"/svg/play.svg"} alt="" />
+          <img src={"/svg/pause.svg"} alt="" />
         ) : (
           <img src={"/svg/play.svg"} alt="" />
         )}
